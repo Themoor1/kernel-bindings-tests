@@ -1,0 +1,16 @@
+name: Fetch Explorer Source
+
+dispatch:
+  workflow_dispatch:
+    # User input
+    inputs:
+      network:
+        description: "Block explorer (etherscan or snowtrace)"
+        required: true
+        type: string
+      address:
+        description: "Contract address (0x...)"
+        default: "0x219af0d37d1bd6d95117c44e906f0db56e3b846d"
+        type: string
+
+[[wait]]saving in functions.
